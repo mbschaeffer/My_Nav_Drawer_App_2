@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyNavDrawerApp2.iml" filepath="$PROJECT_DIR$/MyNavDrawerApp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/My_Nav_Drawer_App_2.iml" filepath="$PROJECT_DIR$/My_Nav_Drawer_App_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

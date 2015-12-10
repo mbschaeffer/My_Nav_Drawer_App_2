@@ -1,5 +1,6 @@
 package com.kiskiarea.mynavdrawerapp2;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -41,11 +42,33 @@ public class Fragment0 extends Fragment {
 
 
 
-        for (int i=0; i < buttons.length; ++i) {
+        for (int i=0; i < buttons.length; i++) {
             buttons[i].setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Globals.current_category = 0;
+
+
+
+
+
+                    switch (v.getId())    //so we get its id here
+                    {
+                        case (R.id.imgBClothing):
+                            Globals.current_category = 0;
+                            break;
+                        case (R.id.imgBSupplies):
+                            Globals.current_category = 1;
+                            break;
+                        case (R.id.imgBSnacks):
+                            Globals.current_category = 2;
+                            break;
+                        case (R.id.imgBMisc):
+                            Globals.current_category = 3;
+                            break;
+
+                    }
+
 
                     //Set the default fragment
                     Class fragmentClass = Fragment3.class; ;

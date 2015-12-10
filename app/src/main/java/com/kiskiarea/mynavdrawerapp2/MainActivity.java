@@ -108,10 +108,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camara) {
-            // Handle the camera action
-            Toast.makeText(getApplicationContext(), "Say cheese.",
-                    Toast.LENGTH_SHORT).show();
-
+            fragmentClass = Fragment0.class;
         } else if (id == R.id.nav_gallery) {
 
             Toast.makeText(getApplicationContext(), "It's a picture show.",
