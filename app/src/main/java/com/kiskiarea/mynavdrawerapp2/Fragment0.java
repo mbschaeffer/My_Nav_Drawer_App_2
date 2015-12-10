@@ -22,10 +22,6 @@ import java.util.List;
 public class Fragment0 extends Fragment {
 
     View mContentView;
-    ImageButton button1;
-    ImageButton button2;
-    ImageButton button3;
-    ImageButton button4;
 
 
 
