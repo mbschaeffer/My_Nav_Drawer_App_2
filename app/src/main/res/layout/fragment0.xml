@@ -5,6 +5,45 @@
     android:layout_height="fill_parent"
     android:background="#ff9802">
 
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center_vertical">
+
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imgBClothing"
+            android:src="@drawable/tshirt1"
+            android:scaleType="fitStart" />
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imgBSupplies"
+            android:src="@drawable/supplies1"
+            android:scaleType="fitStart"/>
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imgBSnacks"
+            android:src="@drawable/snacks1"
+            android:scaleType="fitStart"/>
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imgBMisc"
+            android:src="@drawable/questionmark1"
+            android:scaleType="fitStart"/>
+
+    </GridLayout>
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
