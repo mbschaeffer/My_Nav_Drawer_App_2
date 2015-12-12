@@ -11,121 +11,31 @@ public class Globals extends Application
 {
     public static int current_category;
 
-    public static String [] itemsClothes = {"Baseball Style T-Shirt -Black", "Baseball Style T-Shirt -Blue",
-            "Baseball Style T-Shirt -Light Blue", "Camo Hoodie", "Camo Style T-Shirt",
-            "Cavalier Crew Neck Sweatshirt", "Flash Jacket", "Football Crewneck Sweatshirt",
-            "Football Crewneck Sweatshirt-Blue", "KA Cavalier Socks",
-            "Kiski Area Cavaliers Neon T-shirt", "Kiski Area Sweatpants (Blue)",
-            "Kiski Area Sweatpants (Grey)", "Kiski Area T-Shirt (Pink)", "Long-Sleeve shirt (Blue)",
-            "Long-Sleeve shirt (Grey)", "Mesh Stadium Replica Jersey", "Performance Fleece Jacket",
-            "Superman-Style T-Shirt", "Tie-Dye T-Shirt", "Tie-Dye T-Shirt (Green Blue and Black)",
-            "Tie-Dye T-Shirt (Rainbow)"};
+    public static String [] itemsClothes = {"Baseball Style T-Shirt -Blue",
+            "Bright Pink T-Shirt -Light Blue", "Camo Hoodie", "Superman-Style T-Shirt",
+            "Tie-Dye T-Shirt (Green Blue and Black)"};
 
-    public static String [] itemsSupplies = {"16 GB Flash Drive", "Combination Padlock", "Kiski Area Gym Suit", "Nylon Drawstring bag", "Pencil", "Swim Cap" };
-    public static String [] itemsSnacks = {"York Peppermint Patties", "M&Ms", "KitKats"};
-    public static String [] itemsMisc = {"Blanket ", "KA Baseball Cap", "KA Water Bottle" };
+    public static String [] itemsSupplies = {"Combination Padlock",  "Swim Cap", "Kiski Area Gym Suit", "Water bottle"};
+    public static String [] itemsSnacks ={"Kit Kat","M&Ms","Peppermint Patties","Twix","Twizzlers"};
+    public static String [] itemsMisc = {"KA Baseball Cap", "KA Socks", "KA Drawstring bag" };
 
-    public static String[] descriptionClothes = {""};
-    public static String[] descriptionSupplies= {""};
-    public static String[] descriptionSnacks = {"York Peppermint Patties", "M&Ms", "KitKats"};
-    public static String[] descriptionMisc = {""};
+    public static String[] descriptionClothes = {"Baseball 3/4 inch cotton shirt", "Fluorescent pink cotton tee ",
+            "A nice look for the hunting type", "Short sleeve tee for the cavalier super hero", "A totally rad and psychedelic cotton shirt"};
+    public static String[] descriptionSupplies= {"The dial kind of lock", "Blue cap for keeping that hair dry and out of the way", "A fashionable outfit to sweat in", "Are you thirsty? This is exactly what you need."};
+    public static String[] descriptionSnacks = {"Chocolate Wafers","Candy Covered Chocolate","Minty fresh","Chocolate covered cookie with caramel","Strawberry flavored"};
 
-    public static double[] priceClothes = {14, 14, 14, 40, 17, 27, 38, 16.5, 16.5, 7, 11, 20, 20, 11, 11, 11, 22.5, 38, 15, 14, 14, 14};
-    public static double[] priceSupplies = {8, 5, 18, 10.5, 3.5 };
-    public static double[] priceSnacks = {0.75, 0.75, 0.5};
-    public static double[] priceMisc = {21, 10.5, 5};
+    public static String[] descriptionMisc = {"Nice to wear to a ball game on a sunny day", "Keep those feet toasty warm", "This will hold all of your gym clothes"};
 
-    public static String[] pictClothes;
-    public static String[] pictSupplies;
-    public static String[] pictSnacks = {"pp", "mm", "kk" };
-    public static String[] pictMisc;
+    public static double[] priceClothes = {11, 14,  40, 15.50, 13, 17};
+    public static double[] priceSupplies = {5, 4, 18, 12.50 };
+    public static double[] priceSnacks = {0.75, 0.75, 0.5, 1.0, 1.25};
+    public static double[] priceMisc = {12, 6.5, 8.75};
 
+    public static int[] pictClothes = {R.drawable.clothing1, R.drawable.clothing2, R.drawable.clothing3, R.drawable.clothing4, R.drawable.clothing5};
+    public static int[] pictSupplies = {R.drawable.supplies01, R.drawable.supplies2, R.drawable.supplies3, R.drawable.supplies4};
+    public static int[] pictSnacks = {R.drawable.kk,R.drawable.mm,R.drawable.pp,R.drawable.tw,R.drawable.tz};
+    public static int[] pictMisc = {R.drawable.misc1, R.drawable.misc2, R.drawable.misc3};
 
-    /** Getter for the clothing item array */
-    public String[] getItemsClothes(){
-        return this.itemsClothes;
-    }
-
-    /** Getter for the supplies item array */
-    public String[] getItemsSupplies(){
-        return itemsSupplies;
-    }
-
-    /** Getter for the snacks item array */
-    public String[] getItemsSnacks() {
-        return itemsSnacks;
-    }
-
-    /** Getter for the misc item array */
-    public String[] getItemsMisc() {
-        return itemsMisc;
-    }
-
-    /** Getter for description clothes array */
-    public String[] getDescriptionClothes(){
-        return descriptionClothes;
-    }
-
-    /** Getter for description supplies array */
-    public String[] getDescriptionSupplies(){
-        return descriptionSupplies;
-    }
-
-    /** Getter for description snacks array */
-    public String[] getDescriptionSnacks() {
-        return descriptionSnacks;
-    }
-
-    /** Getter for description misc array */
-    public String[] getDescriptionMisc(){
-        return descriptionMisc;
-    }
-
-    /** Getter for price clothes array */
-    public double[] getPriceClothes(){
-        return priceClothes;
-    }
-
-    /** Getter for price clothes array */
-    public double[] getPriceSupplies(){
-        return priceSupplies;
-    }
-
-    /** Getter for price clothes array */
-    public double[] getPriceSnacks(){
-        return priceSnacks;
-    }
-
-    /** Getter for price clothes array */
-    public double[] getPriceMisc(){
-        return priceMisc;
-    }
-
-    /** Getter for pict clothes array */
-    public String[] getPictClothes(){
-        return pictClothes;
-    }
-
-    /** Getter for pict supplies array */
-    public String[] getPictSupplies(){
-        return pictSupplies;
-    }
-
-
-    /** Getter for pict snacks array */
-    public String[] getPictSnacks(){
-        return pictSnacks;
-    }
-
-    /** Getter for pict misc array */
-    public String[] getPictMisc(){ return pictMisc;}
-
-
-
-
-    public void setItemsSupplies(String[] itemsSupplies) {
-        this.itemsSupplies = itemsSupplies;
-    }
 
 
 

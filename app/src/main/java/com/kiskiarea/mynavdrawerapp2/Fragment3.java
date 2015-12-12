@@ -1,6 +1,7 @@
 package com.kiskiarea.mynavdrawerapp2;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
@@ -9,7 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -20,6 +24,13 @@ public class Fragment3 extends Fragment {
     //Allows the use of the global variables
     Globals g;
     View mContentView;
+
+
+    ListView lv;
+    Context context;
+
+    ArrayList prgmName;
+
 
 
     //@Override
@@ -39,52 +50,57 @@ public class Fragment3 extends Fragment {
         //String[] items= g.getItemsSnacks();
 
         String[] items;
+        String[] descriptions;
+        double[] prices;
+        int[] pict_names;
 
         switch (Globals.current_category) {
             case 0:
 
                 items = Globals.itemsClothes;
+                descriptions = Globals.descriptionClothes;
+                prices = Globals.priceClothes;
+                pict_names = Globals.pictClothes;
                 break;
             case 1:
 
                 items = Globals.itemsSupplies;
+                descriptions = Globals.descriptionSupplies;
+                prices = Globals.priceSupplies;
+                pict_names = Globals.pictSupplies;
                 break;
             case 2:
 
                 items = Globals.itemsSnacks;
+                descriptions = Globals.descriptionSnacks;
+                prices = Globals.priceSnacks;
+                pict_names = Globals.pictSnacks;
                 break;
             case 3:
 
                 items = Globals.itemsMisc;
+                descriptions = Globals.descriptionMisc;
+                prices = Globals.priceMisc;
+                pict_names = Globals.pictMisc;
                 break;
             default:
                 items = Globals.itemsClothes;
-
+                descriptions = Globals.descriptionClothes;
+                prices = Globals.priceClothes;
+                pict_names = Globals.pictClothes;
         }
 
 
-        String str = "";
 
-        for(int i=0; i<items.length; i++) {
-            str += items[i];
-        }
 
-        //(TextView) txtRes = (TextView) ;
-
-        TextView txtRes = (TextView) mContentView.findViewById(R.id.txtResults);
-
-        txtRes.setText(str);
+        lv=(ListView) mContentView.findViewById(R.id.listView);
+        lv.setAdapter(new CustomAdapter(getActivity(), items, descriptions, prices, pict_names));
 
 
 
 
-       // String[] description = g.getDescriptionSnacks();
-        //String[] pict = g.getPictSnacks();
-        //double[] price = g.getPriceSnacks();
 
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-        //        android.R.layout.simple_list_item_1, items);
-        //setListAdapter(adapter);
+
 
         //----Inflate the layout for this fragment---
         return mContentView;

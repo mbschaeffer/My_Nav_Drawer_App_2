@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        >
+
+        <ImageView
+            android:id="@+id/imgStudentStorePict"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="1">
+            <TextView
+                android:id="@+id/txtViewItemName"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Item" />
+            <TextView
+                android:id="@+id/txtViewItemDesc"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Description" />
+            <TextView
+                android:id="@+id/txtViewPrice"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Money" />
+
+        </GridLayout>
+
+    </GridLayout>
+
+
+
+</LinearLayout>
